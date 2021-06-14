@@ -3,7 +3,7 @@
 # Introduction
 
 
-This repository contains code for my article "Build a Serverless Parcel Delivery Command Center on GCP".
+This repository contains code for my article "Build a Serverless Delivery Command Center on GCP".
 
 1. The three scripts are for the Cloud Functions.
 
