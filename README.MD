@@ -14,8 +14,6 @@ This repository contains code for my article "Build a Serverless Parcel Delivery
 GCP setups. Please follow the instructions on my article.
 
 
-```
-
 ## Authors
 
   
