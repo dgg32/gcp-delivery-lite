@@ -1,10 +1,7 @@
 steps:
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  args:
-  - gcloud
-  - functions
-  - deploy
-  - main
-  - --region=europe-west3
-  - --source=.
-  - --trigger-http
+- name: 'python'
+  args: ['pip3','install', '-r', 'requirements.txt', '--user']
+
+- name: 'gcr.io/cloud-builders/gcloud']
+    id: 'deployMyFunction'
+  args: ['functions', 'deploy', 'my-function', '--source' , 'main.py', '--runtime' , 'python39' ,'--trigger-http']
