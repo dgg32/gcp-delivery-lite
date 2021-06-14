@@ -5,6 +5,6 @@ steps:
   - functions
   - deploy
   - main
-  - --region=main
+  - --region=europe-west3
   - --source=.
   - --trigger-http
