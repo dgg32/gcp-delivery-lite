@@ -1,0 +1,14 @@
+{"destinations": [
+    {"address": "Herzog Anton Ulrich Museum, Museumstrasse 1, 38100 Braunschweig", "demand": 0},
+    {"address": "Institute of System Security, Muehlenpfordtstrasse 23, 38106 Braunschweig", "demand": 2},
+    {"address": "Helmholtz Centre for Infection Research, Inhoffenstrasse 7, 38124 Braunschweig", "demand": 4},
+    {"address": "Am Schuetzenpl. 1, 38114 Braunschweig", "demand": 2},
+    {"address": "Willy-Brandt-Platz 1, 38102 Braunschweig", "demand": 6},
+    {"address": "Holwedestrasse 16, 38118 Braunschweig", "demand": 1},
+    {"address": "Europapl. 1, 38100 Braunschweig", "demand": 8},
+    {"address": "Humboldtstrasse 1, 38106 Braunschweig", "demand": 3},
+    {"address": "Schloss Richmond, Wolfenbuetteler Str. 55, 38124 Braunschweig", "demand": 2},
+    {"address": "Johanniterstrasse 5, 38104 Braunschweig", "demand": 2}
+], 
+"carrier": [{"email": "Sixing@gmail.com", "capacity": 15, "name": "Sixing"}, {"email": "Huang@msn.com", "capacity": 15, "name": "Huang"}]
+}

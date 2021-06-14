@@ -1,0 +1,7 @@
+# Function dependencies, for example:
+# package>=version
+fsspec
+gcsfs
+numpy==1.20.0
+ortools
+sendgrid
