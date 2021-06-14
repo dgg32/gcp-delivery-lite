@@ -1,11 +1,10 @@
-- name: 'gcr.io/cloud-builders/gcloud'
- args:
- — functions
- — deploy
- — — runtime=python39
- — — trigger-http
- — — source=./ # Function source files
- — — entry-point=main # Function entry point
- — main # Function name
- waitFor: ['_']
- id: 'deploying-a-serverless-function'
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - main
+  - --region=main
+  - --source=.
+  - --trigger-http
