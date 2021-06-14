@@ -105,7 +105,7 @@ def main(event, context):
         total_load = 0
         for vehicle_id in range(data['num_vehicles']):
             index = routing.Start(vehicle_id)
-            plan_output = f'Hello {json_data["carrier"][vehicle_id]["name"]}, your delivery route is the following:\n<br>'
+            plan_output = f'Hello {json_data["carrier"][vehicle_id]["name"]}, your delivery route is:\n<br>'
 
             
             route_distance = 0
@@ -113,7 +113,8 @@ def main(event, context):
             while not routing.IsEnd(index):
                 node_index = manager.IndexToNode(index)
                 route_load += data['demands'][node_index]
-                plan_output += f' {data["demands"][node_index]} Parcels to {json_data["destinations"][node_index]["address"]} -> <br>'
+                if node_index != 0:
+                    plan_output += f' bring {data["demands"][node_index]} Parcels to {json_data["destinations"][node_index]["address"]} -> <br>'
                 previous_index = index
                 index = solution.Value(routing.NextVar(index))
                 route_distance += routing.GetArcCostForVehicle(
