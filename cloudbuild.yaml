@@ -4,8 +4,8 @@ steps:
   - gcloud
   - functions
   - deploy
-  - main
+  - command-center
   - --region=europe-west3
   - --source=.
-  - --trigger-http
+  - --trigger-bucket=input-json-bucket
   - --runtime=python39
