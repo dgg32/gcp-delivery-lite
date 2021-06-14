@@ -105,7 +105,7 @@ def main(event, context):
         total_load = 0
         for vehicle_id in range(data['num_vehicles']):
             index = routing.Start(vehicle_id)
-            plan_output = f'Route for driver {json_data["carrier"][vehicle_id]["name"]}:\n<br>'
+            plan_output = f'Hello {json_data["carrier"][vehicle_id]["name"]}, your delivery route is the following:\n<br>'
 
             
             route_distance = 0
