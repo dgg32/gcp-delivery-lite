@@ -8,3 +8,4 @@ steps:
   - --region=europe-west3
   - --source=.
   - --trigger-http
+  - --runtime=python39
